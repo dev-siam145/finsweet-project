@@ -1,0 +1,18 @@
+@import "tailwindcss";
+/* font-family: "Roboto Condensed", sans-serif; */
+@theme {
+  /* ==color== */
+  --color-primary: #ffd2a4;
+  --color-navbg: #0d0d0d;
+  /* ===font-family=== */
+  --font-robotoCondensed: "Roboto Condensed", sans-serif;
+  /* ===responsive breakpoint=== */
+  --breakpoint-xs: 400px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1400px;
+  --breakpoint-3xl: 1600px;
+  --breakpoint-4xl: 1920px;
+}
