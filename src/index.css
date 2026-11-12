@@ -1,6 +1,9 @@
+
+
 @import "tailwindcss";
 /* font-family: "Roboto Condensed", sans-serif; */
 @theme {
+  
   /* ==color== */
   --color-primary: #ffd2a4;
   --color-navbg: #0d0d0d;

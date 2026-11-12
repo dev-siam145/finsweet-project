@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Anchor = ({children,href,className}) => {
+const Anchor = ({children,href,className,onClick}) => {
   return (
-    <a href={href} className={className}>
+    <a href={href} className={className} onClick={onClick}>
         {children}
     </a>
   )
