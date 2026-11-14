@@ -1,19 +1,20 @@
 import React from "react";
 import bannerImg from "../../../assets/banner.jpg";
 import Container from "../../common/Container";
+import Images from "../../ui/Images";
 
 const Banner = () => {
   return (
     <>
-      <div
-        className="w-full h-screen"
+      <div className="w-full h-screen"
         style={{
           backgroundImage: `url(${bannerImg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-        }}
-      >
+        }}>
+        
+        
         <Container>
           <p className="text-white font-bold text-base uppercase font-robotoCondensed pt-32">
             Welcome to our CHURCH
