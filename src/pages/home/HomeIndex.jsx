@@ -7,10 +7,10 @@ import Relevents from '../../components/pages/home/Relevents'
 const HomeIndex = () => {
   return (
    <>
-   <Navbar/>
+  
    <Banner/>
    <Relevents/>
-   <Footer/>
+   
    
    </>
   )

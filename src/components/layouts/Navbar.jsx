@@ -6,6 +6,7 @@ import Anchor from "../ui/Anchor";
 import { menuData } from "../../dummyData/menuData";
 import { FaBars } from "react-icons/fa6";
 import { AnimatePresence, motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [sidebarShow, setSidebarShow] = useState(false);
@@ -19,21 +20,21 @@ const Navbar = () => {
         <Container>
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-32">
-              <Anchor
-                href="/"
+              <NavLink
+                to="/"
                 className="relative after:absolute after:content-[''] after:w-0.5 after:bg-white/10 after:h-20 after:-right-16 after:-bottom-6"
               >
                 <Images src={logo} alt="not found" />
-              </Anchor>
+              </NavLink>
               <ul className="hidden lg:flex items-center gap-4">
                 {menuData.map((item, index) => (
                   <li key={index}>
-                    <Anchor
-                      href={item.url}
+                    <NavLink
+                      to={item.url}
                       className="font-normal text-base text-white uppercase font-robotoCondensed"
                     >
                       {item.label}
-                    </Anchor>
+                    </NavLink>
                   </li>
                 ))}
               </ul>
