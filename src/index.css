@@ -21,3 +21,5 @@
   --breakpoint-3xl: 1600px;
   --breakpoint-4xl: 1920px;
 }
+/* ${item.url === pathname ? "text-red-500" : "text-white"} */
+

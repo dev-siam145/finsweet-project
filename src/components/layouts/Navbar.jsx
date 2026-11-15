@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Container from "../common/Container";
 import logo from "../../assets/logo.png";
 import Images from "../ui/Images";
@@ -6,13 +6,22 @@ import Anchor from "../ui/Anchor";
 import { menuData } from "../../dummyData/menuData";
 import { FaBars } from "react-icons/fa6";
 import { AnimatePresence, motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [sidebarShow, setSidebarShow] = useState(false);
+  const pathname=useLocation()
+
+
   const handleSidebar = () => {
     setSidebarShow(true);
   };
+  // useEffect(()=>{
+    
+
+  // },[])
+  console.log(pathname);
+  
 
   return (
     <>
@@ -31,7 +40,7 @@ const Navbar = () => {
                   <li key={index}>
                     <NavLink
                       to={item.url}
-                      className="font-normal text-base text-white uppercase font-robotoCondensed"
+                      className={`font-normal text-base uppercase font-robotoCondensed  ${item.url === pathname.pathname ? "text-red-500" : "text-white"}`}
                     >
                       {item.label}
                     </NavLink>
