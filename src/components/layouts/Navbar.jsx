@@ -16,11 +16,7 @@ const Navbar = () => {
   const handleSidebar = () => {
     setSidebarShow(true);
   };
-  // useEffect(()=>{
-    
 
-  // },[])
-  console.log(pathname);
   
 
   return (
