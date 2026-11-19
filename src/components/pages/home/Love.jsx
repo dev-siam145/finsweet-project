@@ -5,12 +5,13 @@ import sad from "../../../assets/sad.png";
 import Images from "../../ui/Images";
 import reading from "../../../assets/reading.png";
 import buri from "../../../assets/buri.png";
+import { FaArrowRight } from "react-icons/fa6";
 
 const Love = () => {
   return (
     <div>
       <Container>
-        <div className="flex flex-col text-center uppercase mt-[128px] w-[1024px] mx-auto">
+        <div className="flex flex-col text-center uppercase mt-[128px] w-[1024px] mx-auto mb-[126px]">
           <p className="text-base font-robotoCondensed text-footerbg font-normal">
             sub headline
           </p>
@@ -39,6 +40,20 @@ const Love = () => {
             </div>
             <div>
               <Images src={buri} />
+            </div>
+          </div>
+          <div className="w-[512px] h-[175px] mx-auto mt-[64px]">
+            <p className="font-normal font-robotoCondensed">our mission & vision</p>
+            <h2 className="text-footerbg text-[32px] font-bold mt-[16px]">celebrate WITH US</h2>
+            <p className="w-512px h-[73px] mb-[16px] text-footerbg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div className="flex justify-center items-center font-robotoCondensed font-normal">
+              <p>Read More</p>
+              <p>
+                <FaArrowRight />
+              </p>
             </div>
           </div>
         </div>
