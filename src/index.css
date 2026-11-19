@@ -1,13 +1,12 @@
-
-
 @import "tailwindcss";
 /* font-family: "Roboto Condensed", sans-serif; */
 @theme {
-  
   /* ==color== */
   --color-primary: #ffd2a4;
   --color-navbg: #0d0d0d;
   --color-footerbg: #161722;
+
+  --color-releventbg: #fff5eb;
 
   /* ===font-family=== */
   --font-robotoCondensed: "Roboto Condensed", sans-serif;
@@ -22,4 +21,3 @@
   --breakpoint-4xl: 1920px;
 }
 /* ${item.url === pathname ? "text-red-500" : "text-white"} */
-
